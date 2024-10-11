@@ -1,4 +1,4 @@
-package ru.t1.java.transactionservice.dto;
+package ru.t1.java.transactionservice.app.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
