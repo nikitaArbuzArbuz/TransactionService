@@ -9,7 +9,5 @@ spring:
   application:
     name: TransactionService
 
-
-
 server:
   port: 8081
