@@ -21,10 +21,7 @@ public class TransactionController {
 
     @PostMapping("/create")
     public ResponseEntity<String> createTransaction(@RequestBody List<TransactionDto> transactionDto) {
-        log.info("Start...");
-        log.error("Start...");
-        log.debug("Start...");
-//        transactionProducer.sendTransaction(transactionDto);
+        transactionProducer.sendTransaction(transactionDto);
         return ResponseEntity.ok()
                 .header("Server", "Транзакции созданы и отправлены в кафку - " + transactionDto)
                 .build();
